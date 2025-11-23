@@ -6,8 +6,6 @@ This repository contains a PyTorch implementation of an identifiable denoising a
 
 Key adaptations ensure compliance with ICE-BeeM's requirements for model architecture while tailoring it for bioinformatics applications. The primary goal is to model coordinated variations between clinical variables (e.g., patient phenotypes) and genomic data (e.g., expression profiles), enabling accurate inversion: by perturbing clinical inputs, the model reconstructs corresponding genomic changes with high fidelity, leveraging identifiability to produce biologically meaningful representations.  
 
-This project demonstrates strong engineering capabilities in deep learning, with a focus on interpretability over black-box modeling. It is ongoing, with code available for refinement and extension.
-
 ## Features
 
 - **ICE-BeeM Compliance and Adaptation**: The architecture satisfies the foundational requirements outlined in the ICE-BeeM paper for identifiability in conditional energy-based models. Modifications include non-monotonic augmentations (e.g., z, z², 0.1z³) in encoders to enhance representation uniqueness, while maintaining MLP simplicity for rapid adaptation.
